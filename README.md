@@ -30,7 +30,8 @@ get_swap_usage_pct()para obter o uso de swap como uma porcentagem.
 - Python3
 - Psutil
 - Pyyaml
-- Coçorama
+- Colorama
+- python3.9-venv
 
 ## 🛠️ Ambiente 
 1. sudo apt install python3.9-venv
@@ -38,15 +39,18 @@ get_swap_usage_pct()para obter o uso de swap como uma porcentagem.
 3. source .env/bin/activate
 4. deactivate
 
-# Compartilhamento do ambiente
+- Compartilhamento do ambiente
 1. pip freeze > requirements.txt
 2. pip install -r requirements.txt
 
-# Removendo o ambiente
+-  Removendo o ambiente
 1. deactivate
 2. rm -r .env
 
 ## 🚀 Execução
+1. make active_env
+2. make init
+3. make run
 
 ## 📄 Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
