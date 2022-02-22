@@ -3,19 +3,25 @@
 - Recuperar informações de uso de CPU e RAM
 
 1. Relacionado à CPU
+```
 get_cpu_usage_pct()lê a carga atual da CPU como uma porcentagem.
 get_cpu_frequency()obtém a frequência atual da CPU em MHz.
 get_cpu_temp()relata a temperatura atual da CPU em graus Celsius.
+```
 
 2. Relacionado a RAM
+```
 get_ram_usage()recupera o uso atual de RAM em bytes.
 get_ram_total()retorna o total de RAM instalada em bytes.
 get_ram_usage_pct()relata o uso de RAM como uma porcentagem.
+```
 
 3. Troca relacionada
+```
 get_swap_usage()determina o uso de swap atual em bytes.
 get_swap_total()informa sobre a troca total disponível em bytes.
 get_swap_usage_pct()para obter o uso de swap como uma porcentagem.
+```
 
 ## ✨ Tecnologias
 
