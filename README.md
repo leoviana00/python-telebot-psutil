@@ -52,3 +52,8 @@ get_swap_usage_pct()para obter o uso de swap como uma porcentagem.
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 🙇 Referências
+
+- https://pypi.org/project/psutil/
+- https://pypi.org/project/PyYAML/
+- https://pypi.org/project/colorama/
+- https://pypi.org/project/pyTelegramBotAPI/0.3.0/
