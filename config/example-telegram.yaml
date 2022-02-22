@@ -1,0 +1,6 @@
+# [pt_br] TELEGRAM DESABILITADO = false | TELEGRAM HABILITADO = true 
+telegram_enable: true
+# Pegue o chat_id com o @btsherald_bot: https://t.me/btsherald_bot (envie /id)
+chat_ids: [" "] 
+# Pegue o token com o @botfather: https://t.me/botfather (envie /newbot)
+botfather_token: " "
