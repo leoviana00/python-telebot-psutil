@@ -1,7 +1,6 @@
 import psutil
 import telebot
 from src.funcoes import *
-# from credentials import *
 from colorama import init, Fore, Style
 init()
 import yaml
@@ -66,7 +65,20 @@ def uso_cpu(mensagem):
 #           SWAP
 # ---------------------------
 
+# Função para troca de uso em bytes
+@bot.message_handler(commands=["swap_use"])
+def uso_cpu(mensagem):
+    bot.send_message(mensagem.chat.id, 'Swap usado é {} MB'.format(int(get_swap_usage() / 1024 / 1024)))
 
+# Função para Swap total em bytes
+@bot.message_handler(commands=["swap_total"])
+def uso_cpu(mensagem):
+    bot.send_message(mensagem.chat.id, 'Swap total é {} MB'.format(int(get_swap_total() / 1024 / 1024)))
+
+# Função para o uso do Swap em porcentagem
+@bot.message_handler(commands=["swap_use_pct"])
+def uso_cpu(mensagem):
+    bot.send_message(mensagem.chat.id, 'Swap usado é {} %'.format(get_swap_usage_pct()))
 
 def verificar(mensagem):
     return True
@@ -81,6 +93,9 @@ def responder(mensagem):
     /mem_uso Verificar uso atual da RAM em MB
     /mem_total Verificar RAM total
     /mem_uso_pct Verificar Uso de RAM em porcentagem
+    /swap_use Verificar Swap usado
+    /swap_total Verificar Swap total
+    /swap_use_pct Verificar Swap usado em %
     Responder qualquer outra coisa não vai funcionar, clique em uma das opções
     """
     bot.reply_to(mensagem, texto)
