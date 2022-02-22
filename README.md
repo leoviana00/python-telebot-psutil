@@ -25,6 +25,13 @@ get_swap_usage_pct()para obter o uso de swap como uma porcentagem.
 
 ## ✨ Tecnologias
 
+- Telebot
+- Telegram
+- Python3
+- Psutil
+- Pyyaml
+- Coçorama
+
 ## 🛠️ Ambiente 
 1. sudo apt install python3.9-venv
 2. python3 -m venv .env
