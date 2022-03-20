@@ -14,7 +14,6 @@ try:
     telegramBotToken = streamConfigTelegram['botfather_token']
 except FileNotFoundError:
     print('Info: Telegram not configure, rename EXAMPLE-telegram.yaml to telegram.yaml')
-    heroesClickedTelegram = True
 except KeyError:
     print(Fore.RED +'Error: Please update the telegram.yaml file. \nErro: Por favor atualize o arquivo telegram.yaml', Style.RESET_ALL)
     exit()
